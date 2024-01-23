@@ -12,6 +12,7 @@
 		F14CB8D92B5F6F0C00E1F7EE /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14CB8D82B5F6F0C00E1F7EE /* Item.swift */; };
 		F14CB8DB2B5F6F0F00E1F7EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F14CB8DA2B5F6F0F00E1F7EE /* Assets.xcassets */; };
 		F14CB8DE2B5F6F0F00E1F7EE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F14CB8DD2B5F6F0F00E1F7EE /* Preview Assets.xcassets */; };
+		F14CB8E92B5F707800E1F7EE /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14CB8E82B5F707800E1F7EE /* Auth.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		F14CB8D82B5F6F0C00E1F7EE /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		F14CB8DA2B5F6F0F00E1F7EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F14CB8DD2B5F6F0F00E1F7EE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F14CB8E82B5F707800E1F7EE /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,8 @@
 		F14CB8D32B5F6F0C00E1F7EE /* Wishlist */ = {
 			isa = PBXGroup;
 			children = (
+				F14CB8E72B5F706700E1F7EE /* Views */,
+				F14CB8E52B5F703D00E1F7EE /* Models */,
 				F14CB8D42B5F6F0C00E1F7EE /* WishlistApp.swift */,
 				F14CB8D62B5F6F0C00E1F7EE /* ContentView.swift */,
 				F14CB8D82B5F6F0C00E1F7EE /* Item.swift */,
@@ -68,6 +72,29 @@
 				F14CB8DD2B5F6F0F00E1F7EE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F14CB8E52B5F703D00E1F7EE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F14CB8E62B5F704500E1F7EE /* Auth */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F14CB8E62B5F704500E1F7EE /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				F14CB8E82B5F707800E1F7EE /* Auth.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		F14CB8E72B5F706700E1F7EE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +170,7 @@
 				F14CB8D72B5F6F0C00E1F7EE /* ContentView.swift in Sources */,
 				F14CB8D92B5F6F0C00E1F7EE /* Item.swift in Sources */,
 				F14CB8D52B5F6F0C00E1F7EE /* WishlistApp.swift in Sources */,
+				F14CB8E92B5F707800E1F7EE /* Auth.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
