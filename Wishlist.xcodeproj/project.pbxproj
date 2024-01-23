@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F12285E92B600BF900951F6F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12285E82B600BF900951F6F /* User.swift */; };
+		F12285EB2B600DD600951F6F /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F12285EA2B600DD600951F6F /* Localizable.xcstrings */; };
 		F14CB8D52B5F6F0C00E1F7EE /* WishlistApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14CB8D42B5F6F0C00E1F7EE /* WishlistApp.swift */; };
 		F14CB8D72B5F6F0C00E1F7EE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14CB8D62B5F6F0C00E1F7EE /* ContentView.swift */; };
 		F14CB8D92B5F6F0C00E1F7EE /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14CB8D82B5F6F0C00E1F7EE /* Item.swift */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F12285E82B600BF900951F6F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F12285EA2B600DD600951F6F /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		F14CB8D12B5F6F0C00E1F7EE /* Wishlist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wishlist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F14CB8D42B5F6F0C00E1F7EE /* WishlistApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistApp.swift; sourceTree = "<group>"; };
 		F14CB8D62B5F6F0C00E1F7EE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,9 +46,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F12285E72B60079600951F6F /* User */ = {
+			isa = PBXGroup;
+			children = (
+				F12285E82B600BF900951F6F /* User.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
 		F14CB8C82B5F6F0C00E1F7EE = {
 			isa = PBXGroup;
 			children = (
+				F12285EA2B600DD600951F6F /* Localizable.xcstrings */,
 				F14CB8D32B5F6F0C00E1F7EE /* Wishlist */,
 				F14CB8D22B5F6F0C00E1F7EE /* Products */,
 			);
@@ -100,6 +113,7 @@
 		F14CB8E72B5F706700E1F7EE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F12285E72B60079600951F6F /* User */,
 				F1CA8A3A2B5FBEBC002B1FF9 /* Common */,
 				F1CA8A372B5FB9FF002B1FF9 /* SSO */,
 			);
@@ -164,6 +178,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = F14CB8C82B5F6F0C00E1F7EE;
 			productRefGroup = F14CB8D22B5F6F0C00E1F7EE /* Products */;
@@ -182,6 +197,7 @@
 			files = (
 				F14CB8DE2B5F6F0F00E1F7EE /* Preview Assets.xcassets in Resources */,
 				F14CB8DB2B5F6F0F00E1F7EE /* Assets.xcassets in Resources */,
+				F12285EB2B600DD600951F6F /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F14CB8EB2B5F70BD00E1F7EE /* Constants.swift in Sources */,
+				F12285E92B600BF900951F6F /* User.swift in Sources */,
 				F14CB8D72B5F6F0C00E1F7EE /* ContentView.swift in Sources */,
 				F14CB8D92B5F6F0C00E1F7EE /* Item.swift in Sources */,
 				F1CA8A392B5FBA15002B1FF9 /* Login.swift in Sources */,
@@ -332,7 +349,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Wishlist/Preview Content\"";
-				DEVELOPMENT_TEAM = D4GB2QAR6S;
+				DEVELOPMENT_TEAM = Q46TPB6WXW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -361,7 +378,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Wishlist/Preview Content\"";
-				DEVELOPMENT_TEAM = D4GB2QAR6S;
+				DEVELOPMENT_TEAM = Q46TPB6WXW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
