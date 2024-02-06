@@ -15,6 +15,6 @@ enum Sex {
 struct User {
     let name: String
     let avatar: String
-    let sex: Sex
-    let birth: UInt
+    let sex: Sex?
+    let birth: UInt?
 }

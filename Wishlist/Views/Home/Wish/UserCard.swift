@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct UserCard: View {
-    let WIDTH = 64
+    @Environment(\.colorScheme) var colorScheme
+    
+    let WIDTH = 48
     
     let user: User
     let itemCount: Int
@@ -29,12 +31,16 @@ struct UserCard: View {
                     .fontWeight(.medium)
                 Text("\(itemCount) items on the list", comment: "x items on the list")
                     .font(.footnote)
-                    .foregroundColor(.gray)
+                    .foregroundColor(Color(UIColor.secondaryLabel))
             }
             .padding(.leading, 12)
+            Spacer()
         }
         .frame(maxWidth: .infinity)
         .padding(20)
+        .background(Color(colorScheme == .dark ? UIColor.secondarySystemBackground : UIColor.systemBackground))
+        .cornerRadius(16.0)
+        .shadow(color: Color.gray.opacity(0.2), radius: 12, x: 0, y: 0)
     }
 }
 
