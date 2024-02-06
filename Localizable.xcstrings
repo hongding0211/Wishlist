@@ -1,6 +1,24 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "%lld items on the list" : {
+      "comment" : "x items on the list",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld item(s) on the list"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "清单中包含 %1$lld 个愿望"
+          }
+        }
+      }
+    },
     "Edit profile" : {
       "extractionState" : "manual",
       "localizations" : {

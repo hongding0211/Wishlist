@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct User: View {
+struct UserView: View {
     var body: some View {
         NavigationStack {
             List {
@@ -30,5 +30,5 @@ struct User: View {
 }
 
 #Preview {
-    User()
+    UserView()
 }

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F12285E92B600BF900951F6F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12285E82B600BF900951F6F /* User.swift */; };
+		F12285E92B600BF900951F6F /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12285E82B600BF900951F6F /* UserView.swift */; };
 		F12285EB2B600DD600951F6F /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F12285EA2B600DD600951F6F /* Localizable.xcstrings */; };
 		F14CB8D52B5F6F0C00E1F7EE /* WishlistApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14CB8D42B5F6F0C00E1F7EE /* WishlistApp.swift */; };
 		F14CB8D72B5F6F0C00E1F7EE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14CB8D62B5F6F0C00E1F7EE /* ContentView.swift */; };
@@ -16,12 +16,15 @@
 		F14CB8DE2B5F6F0F00E1F7EE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F14CB8DD2B5F6F0F00E1F7EE /* Preview Assets.xcassets */; };
 		F14CB8E92B5F707800E1F7EE /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14CB8E82B5F707800E1F7EE /* Auth.swift */; };
 		F14CB8EB2B5F70BD00E1F7EE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14CB8EA2B5F70BD00E1F7EE /* Constants.swift */; };
+		F19A4C682B7235E800B4C0CB /* UserCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19A4C672B7235E800B4C0CB /* UserCard.swift */; };
+		F19A4C6B2B724C7E00B4C0CB /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19A4C6A2B724C7E00B4C0CB /* Utils.swift */; };
+		F19A4C6D2B7255D800B4C0CB /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19A4C6C2B7255D800B4C0CB /* DataModel.swift */; };
 		F1CA8A392B5FBA15002B1FF9 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CA8A382B5FBA15002B1FF9 /* Login.swift */; };
 		F1CA8A3C2B5FBED1002B1FF9 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CA8A3B2B5FBED1002B1FF9 /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F12285E82B600BF900951F6F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F12285E82B600BF900951F6F /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 		F12285EA2B600DD600951F6F /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		F14CB8D12B5F6F0C00E1F7EE /* Wishlist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wishlist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F14CB8D42B5F6F0C00E1F7EE /* WishlistApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistApp.swift; sourceTree = "<group>"; };
@@ -31,6 +34,9 @@
 		F14CB8DD2B5F6F0F00E1F7EE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F14CB8E82B5F707800E1F7EE /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
 		F14CB8EA2B5F70BD00E1F7EE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F19A4C672B7235E800B4C0CB /* UserCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCard.swift; sourceTree = "<group>"; };
+		F19A4C6A2B724C7E00B4C0CB /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		F19A4C6C2B7255D800B4C0CB /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		F1CA8A382B5FBA15002B1FF9 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		F1CA8A3B2B5FBED1002B1FF9 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -49,7 +55,7 @@
 		F12285E72B60079600951F6F /* User */ = {
 			isa = PBXGroup;
 			children = (
-				F12285E82B600BF900951F6F /* User.swift */,
+				F12285E82B600BF900951F6F /* UserView.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -74,6 +80,7 @@
 		F14CB8D32B5F6F0C00E1F7EE /* Wishlist */ = {
 			isa = PBXGroup;
 			children = (
+				F19A4C692B724C6400B4C0CB /* Utils */,
 				F14CB8E72B5F706700E1F7EE /* Views */,
 				F14CB8E52B5F703D00E1F7EE /* Models */,
 				F14CB8D42B5F6F0C00E1F7EE /* WishlistApp.swift */,
@@ -98,6 +105,7 @@
 			children = (
 				F14CB8E62B5F704500E1F7EE /* Auth */,
 				F14CB8EA2B5F70BD00E1F7EE /* Constants.swift */,
+				F19A4C6C2B7255D800B4C0CB /* DataModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -113,11 +121,36 @@
 		F14CB8E72B5F706700E1F7EE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F19A4C652B7235A400B4C0CB /* Home */,
 				F12285E72B60079600951F6F /* User */,
 				F1CA8A3A2B5FBEBC002B1FF9 /* Common */,
 				F1CA8A372B5FB9FF002B1FF9 /* SSO */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		F19A4C652B7235A400B4C0CB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F19A4C662B7235DE00B4C0CB /* Wish */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F19A4C662B7235DE00B4C0CB /* Wish */ = {
+			isa = PBXGroup;
+			children = (
+				F19A4C672B7235E800B4C0CB /* UserCard.swift */,
+			);
+			path = Wish;
+			sourceTree = "<group>";
+		};
+		F19A4C692B724C6400B4C0CB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F19A4C6A2B724C7E00B4C0CB /* Utils.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		F1CA8A372B5FB9FF002B1FF9 /* SSO */ = {
@@ -209,9 +242,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F14CB8EB2B5F70BD00E1F7EE /* Constants.swift in Sources */,
-				F12285E92B600BF900951F6F /* User.swift in Sources */,
+				F19A4C682B7235E800B4C0CB /* UserCard.swift in Sources */,
+				F19A4C6D2B7255D800B4C0CB /* DataModel.swift in Sources */,
+				F12285E92B600BF900951F6F /* UserView.swift in Sources */,
 				F14CB8D72B5F6F0C00E1F7EE /* ContentView.swift in Sources */,
 				F14CB8D92B5F6F0C00E1F7EE /* Item.swift in Sources */,
+				F19A4C6B2B724C7E00B4C0CB /* Utils.swift in Sources */,
 				F1CA8A392B5FBA15002B1FF9 /* Login.swift in Sources */,
 				F14CB8D52B5F6F0C00E1F7EE /* WishlistApp.swift in Sources */,
 				F14CB8E92B5F707800E1F7EE /* Auth.swift in Sources */,
