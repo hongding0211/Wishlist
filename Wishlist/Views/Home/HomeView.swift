@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HomeView: View {
-    @State private var showAddSheet = true
+    @State private var showAddSheet = false
     
     var body: some View {
         NavigationStack {
@@ -22,9 +22,9 @@ struct HomeView: View {
                         Label("Add", systemImage: "square.and.pencil")
                     }
                 }
-        }
-        .sheet(isPresented: $showAddSheet) {
-            AddWish()
+                .sheet(isPresented: $showAddSheet) {
+                    AddWish()
+                }
         }
     }
 }

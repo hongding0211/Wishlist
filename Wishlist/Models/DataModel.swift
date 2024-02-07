@@ -18,7 +18,14 @@ struct User {
     let sex: Sex?
     let birth: UInt?
     
+    private var avatarUrlWithHttps: String {
+        if (avatar.hasPrefix("http:")) {
+            return avatar.replacingOccurrences(of: "http:", with: "https:")
+        }
+        return avatar
+    }
+    
     func getAvatarUrl(width: Int) -> URL? {
-        return URL(string: getOptimizedOssImageUrl(url: avatar, width: width))
+        return URL(string: getOptimizedOssImageUrl(url: avatarUrlWithHttps, width: width))
     }
 }

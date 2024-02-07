@@ -19,6 +19,12 @@
         }
       }
     },
+    "Add" : {
+
+    },
+    "Close" : {
+
+    },
     "Edit profile" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -29,6 +35,12 @@
           }
         }
       }
+    },
+    "Hello, World!" : {
+
+    },
+    "Log out" : {
+
     },
     "User" : {
       "extractionState" : "manual",

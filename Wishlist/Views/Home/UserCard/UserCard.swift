@@ -23,7 +23,12 @@ struct UserCard: View {
                     .frame(width: CGFloat(WIDTH), height: CGFloat(WIDTH))
                     .clipShape(Circle())
             } placeholder: {
-                ProgressView()
+                ZStack {
+                    Circle()
+                        .fill(Color(UIColor.systemGray5))
+                    Image(systemName: "person.fill").foregroundColor(Color(UIColor.gray))
+                }
+                .frame(width: CGFloat(WIDTH), height: CGFloat(WIDTH))
             }
             VStack(alignment: .leading) {
                 Text(user.name)
