@@ -17,7 +17,7 @@ struct UserCard: View {
     
     var body: some View {
         HStack() {
-            AsyncImage(url: URL(string: getOptimizedOssImageUrl(url: user.avatar, width: WIDTH))) { img in
+            AsyncImage(url: user.getAvatarUrl(width: WIDTH)) { img in
                 img.resizable()
                     .aspectRatio(contentMode: .fill)
                     .frame(width: CGFloat(WIDTH), height: CGFloat(WIDTH))
@@ -38,7 +38,7 @@ struct UserCard: View {
         }
         .frame(maxWidth: .infinity)
         .padding(20)
-        .background(Color(colorScheme == .dark ? UIColor.secondarySystemBackground : UIColor.systemBackground))
+        .background(Color(UIColor.systemBackground))
         .cornerRadius(16.0)
         .shadow(color: Color.gray.opacity(0.2), radius: 12, x: 0, y: 0)
     }

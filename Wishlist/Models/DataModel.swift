@@ -17,4 +17,8 @@ struct User {
     let avatar: String
     let sex: Sex?
     let birth: UInt?
+    
+    func getAvatarUrl(width: Int) -> URL? {
+        return URL(string: getOptimizedOssImageUrl(url: avatar, width: width))
+    }
 }
